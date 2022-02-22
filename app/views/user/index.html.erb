@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PhotoSite</title>
+  <style>
+      h1{
+          background-color: antiquewhite;
+          padding-left: 38%;
+          padding-right: 35%;
+      }
+      table{
+          background-color: azure;
+          border: 1px solid black;
+          border-color: cadetblue;
+          border-bottom-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-width: thick;
+          border-collapse: collapse;
+          width: 100%;
+          height: auto;
+      }
+      th, td {
+          border: 1px solid black;
+          border-color: cadetblue;
+          border-bottom-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-width: thick;
+          border-collapse: collapse;
+          padding: 10px;
+      }
+  </style>
+</head>
+<body>
+<h1 style="font-family: 'Bookman Old Style'; color: crimson">PhotoSite User List</h1>
+
+<table style="border-color: cadetblue; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; border-width: thick;">
+  <thead >
+  <th style="font-family: Perpetua;color: midnightblue; font-size: 30px;">User</th>
+  <th style="font-family: Perpetua;color: midnightblue; font-size: 30px;">First</th>
+  <th style="font-family: Perpetua;color: midnightblue; font-size: 30px;">Last</th>
+  </thead>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= link_to user.id, user_photos_path(user.id) %></td>
+      <td><%= link_to user.first_name, user_photos_path(user.id) %></td>
+      <td><%= link_to user.last_name, user_photos_path(user.id) %></td>
+    </tr>
+  <% end %>
+</table>
+</body>
+</html>
