@@ -26,7 +26,7 @@ EC2 instance support Elastic IP address so, that EC2 instance Start and Stop Ins
 This EC2 instance has image copy saved so, that when EC2 instance is under heavy load or has failure copy is this EC2 instance can be luanched for load balancing without need to PhotoSite Software deployment again and quickly.
 
 
-YouTube URL - https://www.youtube.com/watch?v=I8G6MynMPTU
+YouTube URL - https://youtu.be/rTRQ0v6z0wU
 
 
 GitHub Code Link - https://github.com/rishabparekh14/R-AWS
