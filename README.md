@@ -200,7 +200,7 @@ and check the image name after tagging using command
 
 9. Upload docker image to docker hub using command 
 
-		docker push rp9912/project_r_aws_group7
+		docker push rp9912/webproject
 ![screenshot image](screenshot/12.png)
 
 10. Login to Docker Hub website and check "photosite_docker" image is availabel 
@@ -209,7 +209,7 @@ and check the image name after tagging using command
 11. Click on "public view" and it shows docker image pull link
 
 
-		docker pull rp9912/project_r_aws_group7
+		docker pull rp9912/webproject
 	 		
 Use this command to download docker image
 ![screenshot image](screenshot/14.png)
@@ -372,13 +372,13 @@ Then Run below command to login to EC2 instance (this command info is from above
 
 3. To install and run docker image of PhotoSite 
 
-		sudo docker run -it -p 3000:3000 singhpayalcsu/photosite_docker 
+		sudo docker run -it -p 3000:3000 rp9912/webproject 
 This will install PhotoSite from Docker Hub if not install and then run the PhotoSite.
 This will start PhotoSite server in listening mode.
 ![screenshot image](screenshot/26.png)
 
 ##### AWS EC2 instance running PhotoSite Access
-1. Open "http://3.224.158.141:3000/user/index" PhotoSite URL in browser. This shows PhotoSite app's HOME page.
+1. Open "http://http://52.3.61.74:3000/user/index" PhotoSite URL in browser. This shows PhotoSite app's HOME page.
 Click on index #4 and it will open new page. This will shows images, comments posted with date & time.
 ![screenshot image](screenshot/27.png)
 ![screenshot image](screenshot/28.png)

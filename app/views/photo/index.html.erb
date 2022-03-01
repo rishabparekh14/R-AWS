@@ -12,7 +12,8 @@
     <% @photos.each do |photo| %>
 
       <!--      <p><%#=image_tag(photo.file_name) %></p>-->
-      <p><%=image_tag("https://photositephotos.s3.amazonaws.com/"+photo.file_name) %></p>
+
+      <p><%=image_tag("https://web-photobucket.s3.amazonaws.com/"+photo.file_name) %></p>
       <p><b>Photo created at - </b> <%= photo.date_time %></p>
 
       <% @comments.where("photo_id=?" ,photo.id).each do |comment| %>
