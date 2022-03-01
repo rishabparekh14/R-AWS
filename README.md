@@ -1,20 +1,20 @@
 # PhotoSite Application & Deployment on AWS using docker
 
-- [Introduction and Purpose](https://github.com/singhpayalcsu/PhotoSite/wiki#section-1-introduction-and-purpose)
-- [AWS S3 Bucket](https://github.com/singhpayalcsu/PhotoSite/wiki#aws-s3-bucke)
-- [Creating Ruby on Rails PhotoSite Application](https://github.com/singhpayalcsu/PhotoSite/wiki#steps-followed-to-create-ruby-on-rails-application)
-- [Running PhotoSite using Ruby Mine IDE](https://github.com/singhpayalcsu/PhotoSite/wiki#steps-followed-to-create-ruby-on-rails-application)
-- [Docker Container](https://github.com/singhpayalcsu/PhotoSite/wiki#docker-container)
-- [Docker Image](https://github.com/singhpayalcsu/PhotoSite/wiki#docker-image)
-- [Create Docker Image and Running locally using Docker Image](https://github.com/singhpayalcsu/PhotoSite/wiki#create-docker-image)
-- [AWS EC2 Instance creation](https://github.com/singhpayalcsu/PhotoSite/wiki#aws-ec2-instance-creation)
-- [AWS EC2 Deployment of PhotoSite app using Docker Image](https://github.com/singhpayalcsu/PhotoSite/wiki#aws-ec2-deployment-of-photosite-app-using-docker-image)
-- [PhotoSite running on AWS EC2 Instance](https://github.com/singhpayalcsu/PhotoSite/wiki#aws-ec2-instance-running-photosite-access)
-- [PhotoSite Application Status](https://github.com/singhpayalcsu/PhotoSite/wiki#section-3-this-application-is-working-properly-end-to-end-no-open-issue-is-present)
-- [YouTube URL for Project Demo](https://github.com/singhpayalcsu/PhotoSite/wiki#section-4--youtube-url)
-- [Special Issue 1’s Solution - AWS EC2 instance's image creation](https://github.com/singhpayalcsu/PhotoSite/wiki#aws-ec2-instances-image-creation)
-- [Special Issue 2’s Solution - AWS EC2 instance's Elastic IPs](https://github.com/singhpayalcsu/PhotoSite/wiki#aws-ec2-instances-elastic-ips)
-- [PhotoSite Image Used Reference](https://github.com/singhpayalcsu/PhotoSite/wiki#photosite-images-taken-from---httpborgcsueastbayedugrewecs651projectr_aws_part1tipshtml)
+- [Introduction and Purpose](https://github.com/rishabparekh14/R-AWS/wiki#section-1-introduction-and-purpose)
+- [AWS S3 Bucket](https://github.com/rishabparekh14/R-AWS/wiki#aws-s3-bucke)
+- [Creating Ruby on Rails PhotoSite Application](https://github.com/rishabparekh14/R-AWS/wiki#steps-followed-to-create-ruby-on-rails-application)
+- [Running PhotoSite using Ruby Mine IDE](https://github.com/rishabparekh14/R-AWS/wiki#steps-followed-to-create-ruby-on-rails-application)
+- [Docker Container](https://github.com/rishabparekh14/R-AWS/wiki#docker-container)
+- [Docker Image](https://github.com/rishabparekh14/R-AWS/wiki#docker-image)
+- [Create Docker Image and Running locally using Docker Image](https://github.com/rishabparekh14/R-AWS/wiki#create-docker-image)
+- [AWS EC2 Instance creation](https://github.com/rishabparekh14/R-AWS/wiki#aws-ec2-instance-creation)
+- [AWS EC2 Deployment of PhotoSite app using Docker Image](https://github.com/rishabparekh14/R-AWS/wiki#aws-ec2-deployment-of-photosite-app-using-docker-image)
+- [PhotoSite running on AWS EC2 Instance](https://github.com/rishabparekh14/R-AWS/wiki#aws-ec2-instance-running-photosite-access)
+- [PhotoSite Application Status](https://github.com/rishabparekh14/R-AWS/wiki#section-3-this-application-is-working-properly-end-to-end-no-open-issue-is-present)
+- [YouTube URL for Project Demo](https://github.com/rishabparekh14/R-AWS/wiki#section-4--youtube-url)
+- [Special Issue 1’s Solution - AWS EC2 instance's image creation](https://github.com/rishabparekh14/R-AWS/wiki#aws-ec2-instances-image-creation)
+- [Special Issue 2’s Solution - AWS EC2 instance's Elastic IPs](https://github.com/rishabparekh14/R-AWS/wiki#aws-ec2-instances-elastic-ips)
+- [PhotoSite Image Used Reference](https://github.com/rishabparekh14/R-AWS/wiki#photosite-images-taken-from---httpborgcsueastbayedugrewecs651projectr_aws_part1tipshtml)
 
 
 ## Section 1 Introduction and Purpose
@@ -29,10 +29,10 @@ This EC2 instance has image copy saved so, that when EC2 instance is under heavy
 YouTube URL - https://www.youtube.com/watch?v=I8G6MynMPTU
 
 
-GitHub Code Link - https://github.com/singhpayalcsu/PhotoSite
+GitHub Code Link - https://github.com/rishabparekh14/R-AWS
 
 
-GitHub Wiki Link - https://github.com/singhpayalcsu/PhotoSite/wiki
+GitHub Wiki Link - https://github.com/rishabparekh14/R-AWS/wiki
 
 
 ### Purpose
