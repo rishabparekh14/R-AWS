@@ -196,7 +196,7 @@ Click on index #4 and it will open new page. This will shows images, comments po
 and check the image name after tagging using command 
 
 		docker images
-![screenshot image](screenshot/11.png)
+![screenshot image](screenshot/10.png)
 
 9. Upload docker image to docker hub using command 
 
@@ -380,9 +380,9 @@ This will start PhotoSite server in listening mode.
 ##### AWS EC2 instance running PhotoSite Access
 1. Open "http://http://52.3.61.74:3000/user/index" PhotoSite URL in browser. This shows PhotoSite app's HOME page.
 Click on index #4 and it will open new page. This will shows images, comments posted with date & time.
-![screenshot image](screenshot/27.png)
-![screenshot image](screenshot/28.png)
-![screenshot image](screenshot/29.png)
+![screenshot image](screenshot/7.png)
+![screenshot image](screenshot/8.png)
+![screenshot image](screenshot/9.png)
 
 
 ## SECTION 3) This application is working properly end to end. No open issue is present.
