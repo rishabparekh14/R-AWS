@@ -192,7 +192,7 @@ Click on index #4 and it will open new page. This will shows images, comments po
 
 8. Tag the docker image for upload using command 
 
-		docker tag photosite:docker singhpayalcsu/photosite_docker 
+		 docker tag project_r_aws_group7:docker rp9912 
 and check the image name after tagging using command 
 
 		docker images
@@ -200,7 +200,7 @@ and check the image name after tagging using command
 
 9. Upload docker image to docker hub using command 
 
-		docker push singhpayalcsu/photosite_docker
+		docker push rp9912/project_r_aws_group7
 ![screenshot image](screenshot/12.png)
 
 10. Login to Docker Hub website and check "photosite_docker" image is availabel 
@@ -209,7 +209,7 @@ and check the image name after tagging using command
 11. Click on "public view" and it shows docker image pull link
 
 
-		docker pull singhpayalcsu/photosite_docker
+		docker pull rp9912/project_r_aws_group7
 	 		
 Use this command to download docker image
 ![screenshot image](screenshot/14.png)
