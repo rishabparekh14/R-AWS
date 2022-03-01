@@ -4,6 +4,7 @@ class PhotoController < ApplicationController
     @photos = Photo.where(user_id: params[:id])
     @comments = Comment.all
     @user_all = User.all
+
   end
   def display_name(user_id)
     @user = User.find_by(id: user_id)

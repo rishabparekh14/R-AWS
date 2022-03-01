@@ -1,9 +1,9 @@
 class CreatePhotos < ActiveRecord::Migration[7.0]
   def change
     create_table :photos do |t|
-      t.references :user, null: false, foreign_key: true
-      t.date :date_time
-      t.string :file_name
+      t.column :user_id, :integer
+      t.column :date_time, :date_time
+      t.column :file_name, :string
 
       t.timestamps
     end

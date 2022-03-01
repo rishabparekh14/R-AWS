@@ -1,59 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>PhotoSite</title>
-  <style>
-      head{
-          align-items: center;
-      }
-      h1{
-          background-color: antiquewhite;
-          padding-left: 38%;
-          padding-right: 35%;
-      }
-      h3{
-          background-color: lemonchiffon;
-          padding-left: 44%;
-          padding-right: 35%;
-      }
-      h2{
-          background-color: azure;
-          padding-left: 41%;
-          padding-right: 35%;
-      }
-      img{
-          margin-left: auto;
-          margin-right: auto;
-          display: block;
-
-      }
-      center{
-          font-family: "Felix Titling";
-          color: darkgreen;
-      }
-  </style>
+  <title>Photo Site</title>
 </head>
-<body>
-<div>
-  <h1 style="font-family: 'Bookman Old Style'; color: crimson">PhotoSite User List</h1>  <h3 style="font-family: 'Bell MT';">User Photo Page</h3>
-</div>
 
-<h2>Photos of <%= link_to @user.first_name %> <%= link_to @user.last_name %></h2>
-<% @photos.each do |photo| %>
-  <%= image_tag("/assets/#{photo.file_name}") %>
-  <center> Photo created at   <%= photo.date_time %></center>
 
-  <% @comments.where("photo_id=?",photo.id).each do |comment| %>
+<body style="background: lemonchiffon">
+<center>
+  <div>
+    <h2><u><b><%= @user.first_name %> <%= @user.last_name %> Photos and Comments</b></u></h2><br>
+    <% @photos.each do |photo| %>
 
-    <center> Comment: <%= comment.comment_text %></center>
-    <center> Created at: <%= comment.date_time %></center>
-    <center> Posted by: <%= link_to display_name(comment.user_id) , user_photos_path(comment.user_id) %></center>
+      <!--      <p><%#=image_tag(photo.file_name) %></p>-->
+      <p><%=image_tag("https://photositephotos.s3.amazonaws.com/"+photo.file_name) %></p>
+      <p><b>Photo created at - </b> <%= photo.date_time %></p>
 
-  <% end %>
-  <br>
-  <br>
+      <% @comments.where("photo_id=?" ,photo.id).each do |comment| %>
+
+        <li> <b>Comment - </b> <%= comment.comment_text %></li>
+        <li> <b>Created at - </b> <%= comment.date_time %></li>
+        <li> <b>Posted by - </b> <%= link_to display_name(comment.user_id), user_photos_path(comment.user_id) %></li>
+
+      <% end %>
+      </ul>
+      <br>
+      <br>
+    <%end%>
   </div>
-<%end%>
+</center>
 </body>
 </html>

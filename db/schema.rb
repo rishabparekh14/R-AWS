@@ -10,25 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_02_22_021406) do
+ActiveRecord::Schema[7.0].define(version: 2022_02_26_055139) do
   create_table "comments", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "photo_id", null: false
-    t.date "date_time"
+    t.integer "photo_id"
+    t.integer "user_id"
+    t.time "date_time"
     t.string "comment_text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["photo_id"], name: "index_comments_on_photo_id"
-    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "photos", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.date "date_time"
+    t.integer "user_id"
+    t.time "date_time"
     t.string "file_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_photos_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -38,7 +35,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_02_22_021406) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "comments", "photos"
-  add_foreign_key "comments", "users"
-  add_foreign_key "photos", "users"
 end

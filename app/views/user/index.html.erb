@@ -1,52 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>PhotoSite</title>
-  <style>
-      h1{
-          background-color: antiquewhite;
-          padding-left: 38%;
-          padding-right: 35%;
-      }
-      table{
-          background-color: azure;
-          border: 1px solid black;
-          border-color: cadetblue;
-          border-bottom-left-radius: 30px;
-          border-bottom-right-radius: 30px;
-          border-width: thick;
-          border-collapse: collapse;
-          width: 100%;
-          height: auto;
-      }
-      th, td {
-          border: 1px solid black;
-          border-color: cadetblue;
-          border-bottom-left-radius: 30px;
-          border-bottom-right-radius: 30px;
-          border-width: thick;
-          border-collapse: collapse;
-          padding: 10px;
-      }
-  </style>
-</head>
-<body>
-<h1 style="font-family: 'Bookman Old Style'; color: crimson">PhotoSite User List</h1>
+<body style="background: lemonchiffon">
 
-<table style="border-color: cadetblue; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; border-width: thick;">
-  <thead >
-  <th style="font-family: Perpetua;color: midnightblue; font-size: 30px;">User</th>
-  <th style="font-family: Perpetua;color: midnightblue; font-size: 30px;">First</th>
-  <th style="font-family: Perpetua;color: midnightblue; font-size: 30px;">Last</th>
-  </thead>
+<h1 style="color: deepskyblue"><center><b><u>Users List</u></b></center></h1><br>
+
+<table id="myTable" class="table table-hovered" border="1px solid">
+  <tr>
+    <thead class="thead-light">
+    <th style="background: deepskyblue"><h3><u>ID</u></h3></th>
+    <th style="background: deepskyblue"><h3><u>First Name</u></h3></th>
+    <th style="background: deepskyblue"><h3><u>Last Name</u></h3></th>
+    </thead>
+  </tr>
+
   <% @users.each do |user| %>
     <tr>
-      <td><%= link_to user.id, user_photos_path(user.id) %></td>
-      <td><%= link_to user.first_name, user_photos_path(user.id) %></td>
-      <td><%= link_to user.last_name, user_photos_path(user.id) %></td>
+      <th style="..."><%= link_to user.id, user_photos_path(user.id) %></th>
+      <td style="..."><%= link_to user.first_name, user_photos_path(user.id) %></td>
+      <td style="..."><%= link_to user.last_name,user_photos_path(user.id) %></td>
     </tr>
   <% end %>
 </table>
+
 </body>
-</html>
