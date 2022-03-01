@@ -2,17 +2,17 @@ class LoadData < ActiveRecord::Migration[7.0]
   def up
     # Create initial users.
     down
-    jb = User.new(:first_name => "Justin", :last_name => "Bieber")
+    jb = User.new(:first_name => "Rishab", :last_name => "Parekh")
     jb.save(:validate => false)
-    ph = User.new(:first_name => "Paris",  :last_name => "Hilton")
+    ph = User.new(:first_name => "Siddhant",  :last_name => "Shah")
     ph.save(:validate => false)
-    mt = User.new(:first_name => "Megan",  :last_name => "Trainor")
+    mt = User.new(:first_name => "Dharmil",  :last_name => "Shah")
     mt.save(:validate => false)
-    bo = User.new(:first_name => "Barack", :last_name => "Obama")
+    bo = User.new(:first_name => "Wazahat", :last_name => "Attar")
     bo.save(:validate => false)
-    sc = User.new(:first_name => "Santa", :last_name => "Claus")
+    sc = User.new(:first_name => "Vaibhav", :last_name => "Claus")
     sc.save(:validate => false)
-    jo = User.new(:first_name => "John", :last_name => "Ousterhout")
+    jo = User.new(:first_name => "Shashiraj", :last_name => "Ousterhout")
     jo.save(:validate => false)
 
     # Create initial photos.
